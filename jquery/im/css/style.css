@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-size: 10px;
+}
+
+.im {
+    margin: 0 auto;
+    width: 50em;
+}
+
+.im .im-author-fullname {
+    color: #000;
+    display: block;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.im .im-author-thumb {
+    background: #ddd;
+    display: inline-block;
+    float: left;
+    height: 5em;
+    margin-left: -6em;
+    width: 5em;
+}
+
+.im .im-controls {
+    margin-left: 6em;
+    text-align: right;
+}
+
+.im .im-btn {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    color: #555;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+}
+
+.im .im-btn:hover {
+    background: #ddd;
+    color: #333;
+}
+
+.im .im-empty {
+    margin: 3em 0 3em 6em;
+    text-align: center;
+}
+
+.im .im-empty span {
+    color: #999;
+    font-size: 1.4em;
+}
+
+.im .im-item {
+    margin: 0 0 3em 6em;
+}
+
+.im .im-item:first-child {
+    margin-top: 3em;
+}
+
+.im .im-item-header {
+    margin-bottom: 0.5em;
+}
+
+.im .im-msg {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    font-size: 1.2em;
+    height: 5em;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    text-align: left;
+    width: 100%;
+}
+
+.im .im-post-time {
+    color: #999;
+    font-size: 1.4em;
+}
+
+.im a {
+    text-decoration: none;
+}
+
+.im a:hover {
+    text-decoration: underline;
+}
+
+.im p {
+    font-size: 1.4em;
+    margin: 0.5em 0;
+}
