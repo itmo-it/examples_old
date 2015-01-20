@@ -39,7 +39,7 @@
     };
 
 
-    handlers.onPressEnter = function (e) {
+    handlers.onPressCtrlEnter = function (e) {
         if (e.keyCode === 13 && e.ctrlKey) {
             appendMessage( $(e.delegateTarget) );
             return false;
@@ -49,6 +49,6 @@
 
     $(function () {
         $('#im').on('click', '.im-send', handlers.onSend)
-                .on('keypress', '.im-msg', handlers.onPressEnter);
+                .on('keydown', '.im-msg', handlers.onPressCtrlEnter);
     });
 }(jQuery));
