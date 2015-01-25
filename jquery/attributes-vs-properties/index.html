@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../bower_components/SyntaxHighlighter/styles/shCore.css">
+    <link rel="stylesheet" href="../bower_components/SyntaxHighlighter/styles/shThemeDefault.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>jQuery - Чем отличается атрибут от свойства?</title>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/SyntaxHighlighter/scripts/XRegExp.js"></script>
+    <script src="../bower_components/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script src="../bower_components/SyntaxHighlighter/scripts/shBrushXml.js"></script>
+    <script src="../bower_components/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+    <script src="js/attr_vs_prop.js"></script>
+</head>
+
+<body>
+    <div class="col-1">
+        <pre class="brush: xml; toolbar: false;">
+            <input id="checkbox" type="checkbox">
+            <input id="checkbox2" type="checkbox" checked>
+            <a id="link" href="#for_result">Example</a>
+        </pre>
+    
+        <pre class="brush: js; toolbar: false;">
+            var result    = $('#for_result'),
+                checkbox  = $('#checkbox'),
+                checkbox2 = $('#checkbox2'),
+                link      = $('#link');
+
+
+            checkbox.attr('checked');  // => undefined
+            checkbox2.attr('checked'); // => checked
+
+            checkbox.prop('checked');  // => false
+            checkbox2.prop('checked'); // => true
+
+            link.attr('href'); // => #for_result
+            link.prop('href'); // => http://itmo-it.github.io/jquery/attributes-vs-properties/index.html#for_result
+        </pre>
+    </div>
+    <div class="col-2">
+        <div class="example">
+            <input id="checkbox" type="checkbox">
+            <input id="checkbox2" type="checkbox" checked>
+            <a id="link" href="#for_result">Example</a>
+        </div>
+        <dl id="for_result"></dl>
+        <p>
+        <a href="http://learn.javascript.ru/attributes-and-custom-properties" target="_blank">
+            Учебник: "Атрибуты и "свои" свойства"
+        </a>
+    </p>
+    </div>
+</body>
+</html>

@@ -35,7 +35,7 @@
 
 
     handlers.onSend = function (e) {
-        appendMessage( $(e.delegateTarget) );
+        appendMessage( $( e.delegateTarget ) );
     };
 
 
@@ -50,5 +50,5 @@
     $(function () {
         $('#im').on('click', '.im-send', handlers.onSend)
                 .on('keydown', '.im-msg', handlers.onPressCtrlEnter);
-    });
-}(jQuery));
+    });                                                                 
+}(jQuery)); 
