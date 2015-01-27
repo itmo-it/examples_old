@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>jQuery - Примеры эффектов</title>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/effects.js"></script>
+</head>
+
+<body>
+    <div class="col-1">
+        <div class="items">
+            <div id="item_show_hide" class="item item-show-hide">1</div>
+            <div id="item_toggle" class="item item-toggle">2</div>
+            <div id="item_fade" class="item item-fade">3</div>
+            <div id="item_slide" class="item item-slide">4</div>
+        </div>
+        <div class="area">
+            <div id="item_animated_box" class="item item-animated-box">5</div>
+        </div>
+    </div>
+    <div class="col-2">
+        <ol id="buttons" class="buttons">
+            <li>
+                <button class="show">show()</button>
+                <button class="hide">hide()</button>
+                <button class="hide-show">hide('fast').show('slow')</button>
+            </li>
+            <li>
+                <button class="toggle">toggle()</button>
+                <button class="toggle-slow">toggle('slow')</button>
+            </li>
+            <li>
+                <button class="fade-in">fadeIn()</button>
+                <button class="fade-out">fadeOut()</button>
+                <button class="fade-to">fadeTo('slow', 0.5)</button>
+                <button class="fade-reset">fadeTo('slow', 1)</button>
+                <button class="fade-toggle">fadeToggle()</button>
+            </li>
+            <li>
+                <button class="slide-down">slideDown()</button>
+                <button class="slide-up">slideUp()</button>
+                <button class="slide-toggle">slideToggle()</button>
+            </li>
+            <li>
+                <button class="run-animate">Run animate</button>
+                <button class="run">Run animate without queue</button>
+                <button class="run-queue">Run animate with queue</button>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
